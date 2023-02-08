@@ -94,6 +94,71 @@
         积极扩大有效投资！
       </span>
     </section>
+
+    <section class="article2">
+      <img src="@/assets/images/juxinglogokaobei5.png" alt="" />
+
+      <span class="title">
+        大鹏之动非一羽之轻
+        <br />
+        骐骥之力非一足之力
+      </span>
+      <p>
+        聚星团队 汇聚各界精英大咖 最专业的金融项目团队
+        聚星以超前的感知和预判互联网与实体企业发展 结合当下国内外时局
+        历经数年带领聚星每一位参与者 避坑 防雷 为每一位参与者保驾护航
+        感谢每一位参与者支持与陪伴 大爱无疆 智慧时代 品质先行 凝聚共识 汇聚聚星
+        星向未来 让我们一起在（聚星）共筑未来 杨帆起航
+        顶尖战力共聚聚星，为你披荆斩棘。
+      </p>
+
+      <img class="mt27" src="@/assets/images/juxingkaobei6.png" alt="" />
+
+      <span class="title">
+        为什么要加入我们
+        <br />
+        日益壮大的投资者群体？
+      </span>
+      <ul>
+        <li>
+          <span></span>
+          1-专业的项目风险评估人员
+        </li>
+        <li>
+          <span></span>
+          2-专业的法务团队为项目提供详细的尽职调查与分析
+        </li>
+        <li>
+          <span></span>
+          3-第一时间获取各行业的一手咨讯，为我们的工作与生活提供了更好的安全保证
+        </li>
+        <li>
+          <span></span>
+          4-资金扶持.专业教学，实时直播经验分享！
+        </li>
+      </ul>
+    </section>
+
+    <van-swipe class="swipe" :autoplay="3000" indicator-color="white">
+      <van-swipe-item>
+        <div class="swipe_item">
+          <img class="douhao1" src="@/assets/images/douhao1.png" alt="" />
+          <span class="content">
+            毕业于武汉大学金融法学双硕士；于2017年创立集项目投资研发、运营、协作、推广的互联网项目团队。有着超过10年互联网投资项目带领团队经验，曾参与和主导多个知名互联网项目投资项目，并全部成功带领团队赚的利润成功完成撤资；投资和团队管理经验丰富。主要的互联网知名项目包括麦点商城、盘古社区、乐播农业、同义汇以及2022年五月中旬带领团队进场，于2022年十一月中旬成功完成团队全盈利撤资的【同心社区】汇能共享项目等；并在股票、期货方面也具有丰富的投资经验，擅长趋势判断，对市场高度敏感，控制回撤，兼顾绝对收益及相对收益，为团队成员带来丰厚的回报。
+          </span>
+
+          <div class="info">
+            <img class="user" src="@/assets/images/tuceng9kaobei.png" alt="" />
+
+            <div class="info_content">
+              <span>陈国锋</span>
+              <span>聚星团队长</span>
+            </div>
+            <img src="@/assets/images/douhao2.png" alt="" />
+          </div>
+        </div>
+      </van-swipe-item>
+    </van-swipe>
   </div>
 </template>
 
@@ -251,6 +316,147 @@ export default {
       font-weight: 300;
       color: #ffffff;
       border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+  }
+
+  .article2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(240, 246, 252, 1);
+
+    img {
+      width: 100%;
+    }
+
+    .title {
+      font-size: 29px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: #2c2b29;
+      line-height: 32px;
+      margin-top: 32px;
+      padding: 0 15px;
+    }
+
+    p {
+      font-size: 15px;
+      font-family: PingFang SC;
+      font-weight: 300;
+      color: #22211f;
+      line-height: 22px;
+      margin: 40px 0 0 0;
+      padding: 0 15px;
+    }
+
+    .mt27 {
+      margin-top: 27px;
+    }
+
+    ul {
+      width: 100%;
+      margin: 40px 0 45px;
+      padding: 0 15px;
+      list-style: none;
+
+      li {
+        width: 100%;
+        font-size: 15px;
+        font-family: PingFang SC;
+        font-weight: 300;
+        color: #22211f;
+        line-height: 22px;
+        display: flex;
+        margin-top: 3px;
+
+        span {
+          width: 5px;
+          height: 5px;
+          background: #171d97;
+          border-radius: 50%;
+          margin-right: 16px;
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+
+  .swipe {
+    width: 100%;
+    padding: 32px 0 49px;
+    background-color: #fff;
+    overflow: hidden;
+
+    // ::v-deep(.van-swipe__track) {
+    //   width: 100% !important;
+    //   overflow: hidden;
+
+    //   .van-swipe-item {
+    //     width: 100% !important;
+    //   }
+    // }
+
+    .swipe_item {
+      width: calc(100% - 15px * 2);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin-left: 15px;
+
+      .douhao1 {
+        width: 36px;
+        height: 30px;
+      }
+
+      .content {
+        font-size: 15px;
+        font-family: PingFang SC;
+        font-weight: 300;
+        color: #22211f;
+        line-height: 22px;
+        margin-top: 36px;
+      }
+
+      .info {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: 27px;
+
+        .user {
+          width: 166px;
+          height: 166px;
+        }
+
+        .info_content {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            &:nth-child(1) {
+              font-size: 20px;
+              font-family: PingFang SC;
+              font-weight: 400;
+              color: #22211f;
+            }
+
+            &:nth-child(2) {
+              font-size: 13px;
+              font-family: PingFang SC;
+              font-weight: 400;
+              color: #22211f;
+              margin-top: 9px;
+            }
+          }
+        }
+
+        img {
+          width: 36px;
+          height: 30px;
+        }
+      }
     }
   }
 }
