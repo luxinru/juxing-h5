@@ -292,28 +292,29 @@ export default {
 
 <style lang="scss" scoped>
 .page_root {
-  padding: 117px 13%;
+  padding: 47px 15px;
   align-items: flex-start;
   .title {
-    width: 100%;
-    font-size: 88px;
-    font-family: Source Han Sans CN;
-    font-weight: 200;
+    font-size: 29px;
+    font-family: PingFang SC;
+    font-weight: 400;
     color: #2c2b29;
-    margin-bottom: 106px;
+    line-height: 32px;
+    margin-bottom: 35px;
   }
 
   p {
     width: 100%;
-    font-size: 26px;
-    font-family: Source Han Sans CN;
-    font-weight: 200;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 300;
     color: #22211f;
-    line-height: 29px;
+    line-height: 22px;
   }
 
   img {
-    margin: 50px 0;
+    width: 100%;
+    margin: 39px 0;
   }
 }
 </style>
