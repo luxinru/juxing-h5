@@ -52,6 +52,16 @@ export default {
     };
   },
 
+  watch: {
+    "$route.path": {
+      handler() {
+        const path = this.$route.path.replace("/", "");
+        this.menu = path || "home";
+      },
+      immediate: true,
+    },
+  },
+
   mounted() {},
 
   methods: {
