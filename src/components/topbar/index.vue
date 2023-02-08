@@ -75,6 +75,8 @@ export default {
         path: `/${route}`,
       });
       this.onOpenClick(false);
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     },
   },
 };

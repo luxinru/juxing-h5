@@ -101,7 +101,6 @@
 
     <section class="info2">
       <div class="part1">
-        <img src="@/assets/images/tuceng16.png" alt="" />
         <div class="info2_info">
           <span>INSIGHT</span>
           <span>partners</span>
@@ -110,6 +109,7 @@
             聚星团队最近一次的互联网项目投资操作——在2022年5月中旬经过团队全面的专业分析和考察后决定选择”同心社区“汇能共享项目进场，于2022年11月中旬带领团队全员完成盈利并安全退场
           </span>
         </div>
+        <img src="@/assets/images/tuceng16.png" alt="" />
       </div>
 
       <div class="part2">
@@ -144,8 +144,6 @@ export default {
 
   mounted() {
     this.$nextTick(() => {
-      this.init();
-
       $("#development_history_4 li").hover(function () {
         $("#development_history_4 li .circle::before").animate(
           {
@@ -191,20 +189,7 @@ export default {
     clearInterval(this.intervalId);
   },
 
-  methods: {
-    init() {
-      const $img_list = this.$refs.img_list;
-      const scrollWidth = $img_list.scrollWidth;
-      $img_list.scrollLeft = 0;
-
-      this.intervalId = setInterval(() => {
-        $img_list.scrollLeft += 1;
-        if (scrollWidth - $img_list.scrollLeft === $img_list.offsetWidth) {
-          $img_list.scrollLeft = 0;
-        }
-      }, 10);
-    },
-  },
+  methods: {},
 };
 </script>
 
@@ -212,35 +197,33 @@ export default {
 .page_root {
   .header {
     width: 100%;
-    height: 637px;
+    padding: 64px 32px 59px;
     background-color: rgba(241, 242, 243, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .tip1 {
-      font-size: 88px;
-      font-family: Source Han Sans CN;
-      font-weight: 200;
+      font-size: 42px;
+      font-family: PingFang SC;
+      font-weight: 300;
       color: #2c2b29;
-      line-height: 96px;
-      margin-top: 121px;
     }
 
     .tip2 {
-      width: 540px;
-      font-size: 20px;
-      font-family: Source Han Sans CN;
-      font-weight: 200;
+      font-size: 17px;
+      font-family: PingFang SC;
+      font-weight: 300;
       color: #22211f;
-      margin-top: 52px;
+      margin-top: 37px;
       text-align: center;
     }
   }
   .info1 {
     width: 100%;
-    padding: 93px 13% 195px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 
     .img1 {
       width: 100%;
@@ -249,7 +232,8 @@ export default {
     .info1_info {
       width: 100%;
       display: flex;
-      margin-top: 132px;
+      flex-direction: column;
+      padding: 52px 15px 16px;
 
       div {
         flex: 1 0;
@@ -257,51 +241,53 @@ export default {
         flex-direction: column;
 
         span {
-          font-size: 80px;
-          font-family: Source Han Sans CN;
-          font-weight: 200;
+          width: 262px;
+          height: 124px;
+          font-size: 29px;
+          font-family: PingFang SC;
+          font-weight: 400;
           color: #2c2b29;
-          line-height: 96px;
+          line-height: 32px;
         }
         p {
-          width: 559px;
-          font-size: 21px;
-          font-family: Source Han Sans CN;
-          font-weight: 200;
+          font-size: 15px;
+          font-family: PingFang SC;
+          font-weight: 300;
           color: #22211f;
-          line-height: 29px;
-          margin-top: 90px;
+          line-height: 22px;
+          margin-top: 32px;
         }
       }
 
       img {
-        width: 434px;
-        margin-top: 277px;
-        margin-left: 188px;
+        width: 246px;
+        margin-top: 33px;
       }
     }
   }
 
   #development_history_4 {
     width: 100%;
-    height: 510px;
+    // height: 510px;
     background: url("@/assets/images/5d25ec589e2eccd82824fd330d5143b43a4e6872b1f0b2-7LnDPG.png")
       no-repeat;
     background-size: 100% 100%;
+    zoom: 0.3;
   }
 
   .vip {
     width: 100%;
-    padding: 85px 0 0;
+    padding: 23px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .title {
-      font-size: 32px;
-      font-family: Source Han Sans CN;
-      font-weight: 400;
-      color: #2c2b29;
+      font-size: 17px;
+      font-family: PingFang SC;
+      font-weight: 500;
+      color: #22211f;
+      font-weight: bold;
 
       &::before {
         content: "·";
@@ -316,30 +302,22 @@ export default {
 
     .img_list {
       width: 100%;
-      display: flex;
-      align-items: center;
-      margin-top: 121px;
-      overflow-x: scroll;
-
-      &::-webkit-scrollbar {
-        display: none;
-      }
+      margin-top: 23px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 9px;
+      grid-row-gap: 9px;
+      padding: 0 15px;
       img {
-        width: 255px;
-        height: 338px;
-        margin-right: 22px;
-
-        &:last-child {
-          margin-right: 0;
-        }
+        width: 100%;
       }
     }
   }
 
   .info2 {
     width: 100%;
-    padding: 0 13% 190px;
-    margin-top: 230px;
+    padding: 0 15px 52px;
+    margin-top: 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -347,11 +325,11 @@ export default {
     .part1 {
       width: 100%;
       display: flex;
+      flex-direction: column;
       img {
-        width: 596px;
-        height: 434px;
-        margin-right: 62px;
-        margin-top: 13px;
+        width: 199px;
+        height: 145px;
+        margin-top: 23px;
       }
 
       .info2_info {
@@ -361,7 +339,7 @@ export default {
 
         span {
           &:nth-child(1) {
-            font-size: 37px;
+            font-size: 29px;
             font-family: Source Han Sans CN;
             font-weight: 500;
             color: #171d97;
@@ -369,30 +347,31 @@ export default {
           }
 
           &:nth-child(2) {
-            font-size: 14px;
+            font-size: 11px;
             font-family: Source Han Sans CN;
             font-weight: 500;
             color: #302f2d;
-            margin-top: 8px;
+            margin-top: 7px;
             font-weight: bold;
           }
 
           &:nth-child(3) {
-            font-size: 88px;
-            font-family: Source Han Sans CN;
-            font-weight: 200;
+            width: 268px;
+            font-size: 29px;
+            font-family: PingFang SC;
+            font-weight: 400;
             color: #2c2b29;
-            line-height: 96px;
-            margin-top: 27px;
+            line-height: 32px;
+            margin-top: 31px;
           }
 
           &:nth-child(4) {
-            font-size: 21px;
-            font-family: Source Han Sans CN;
-            font-weight: 200;
+            font-size: 15px;
+            font-family: PingFang SC;
+            font-weight: 300;
             color: #22211f;
-            line-height: 29px;
-            margin-top: 73px;
+            line-height: 22px;
+            margin-top: 26px;
           }
         }
       }
@@ -402,10 +381,10 @@ export default {
       width: 100%;
       display: flex;
       flex-direction: column;
-      margin-top: 178px;
+      margin-top: 38px;
 
       .title1 {
-        font-size: 37px;
+        font-size: 29px;
         font-family: Source Han Sans CN;
         font-weight: 500;
         color: #171d97;
@@ -413,30 +392,31 @@ export default {
       }
 
       .title2 {
-        font-size: 14px;
+        font-size: 11px;
         font-family: Source Han Sans CN;
         font-weight: 500;
         color: #302f2d;
-        margin-top: 8px;
+        margin-top: 7px;
         font-weight: bold;
       }
 
       .title3 {
-        font-size: 88px;
-        font-family: Source Han Sans CN;
-        font-weight: 200;
+        width: 268px;
+        font-size: 29px;
+        font-family: PingFang SC;
+        font-weight: 400;
         color: #2c2b29;
-        line-height: 96px;
-        margin-top: 27px;
+        line-height: 32px;
+        margin-top: 31px;
       }
 
       .title4 {
-        font-size: 21px;
-        font-family: Source Han Sans CN;
-        font-weight: 200;
+        font-size: 15px;
+        font-family: PingFang SC;
+        font-weight: 300;
         color: #22211f;
-        line-height: 29px;
-        margin-top: 72px;
+        line-height: 22px;
+        margin-top: 26px;
       }
 
       .imgs {
@@ -444,7 +424,15 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 85px;
+        margin-top: 27px;
+
+        img {
+          width: calc(50% - 6px);
+
+          &:last-child {
+            margin-left: 12px;
+          }
+        }
       }
     }
   }

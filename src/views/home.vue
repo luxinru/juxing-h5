@@ -90,8 +90,15 @@
         查看我们的基准白皮书、文章和更多资源，帮助您作为投资者保持领先地位
       </span>
 
-      <span class="item" v-for="index in 5" :key="index">
-        积极扩大有效投资！
+      <span class="item" @click="toDetail(1)"> 积极扩大有效投资！ </span>
+      <span class="item" @click="toDetail(2)">
+        跟着总书记学习二十大报告丨促进人与自然和谐共生
+      </span>
+      <span class="item" @click="toDetail(3)">
+        21条举措力挺民间投资，发改委将推出“绿灯”投资案例
+      </span>
+      <span class="item" @click="toDetail(4)">
+        聚星团队探索碳中和特点及演变
       </span>
     </section>
 
