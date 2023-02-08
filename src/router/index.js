@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/home.vue";
-// import Contact from "../views/contact.vue";
+import Contact from "../views/contact.vue";
 import Article from "../views/article.vue";
 // import About from "../views/about.vue";
 // import ArticleDetail from "../views/article-detail.vue";
@@ -17,11 +17,11 @@ const router = createRouter({
       name: "home",
       component: Home,
     },
-    // {
-    //   path: "/contact",
-    //   name: "contact",
-    //   component: Contact,
-    // },
+    {
+      path: "/contact",
+      name: "contact",
+      component: Contact,
+    },
     {
       path: "/article",
       name: "article",
