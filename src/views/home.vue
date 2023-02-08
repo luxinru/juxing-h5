@@ -83,6 +83,17 @@
 
       <img class="buju" src="@/assets/images/houduankaobei.png" alt="" />
     </section>
+
+    <section class="inside_story">
+      <span class="title">了解内情</span>
+      <span class="sub_title">
+        查看我们的基准白皮书、文章和更多资源，帮助您作为投资者保持领先地位
+      </span>
+
+      <span class="item" v-for="index in 5" :key="index">
+        积极扩大有效投资！
+      </span>
+    </section>
   </div>
 </template>
 
@@ -201,6 +212,45 @@ export default {
     .buju {
       width: 344px;
       margin: 24px auto 0;
+    }
+  }
+
+  .inside_story {
+    background-color: rgba(23, 29, 151, 1);
+    padding: 38px 16px;
+    display: flex;
+    flex-direction: column;
+    max-height: 765px;
+    overflow-y: auto;
+
+    .title {
+      font-size: 29px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: #ffffff;
+    }
+
+    .sub_title {
+      font-size: 15px;
+      font-family: PingFang SC;
+      font-weight: 300;
+      color: #ffffff;
+      margin-top: 27px;
+    }
+
+    .item {
+      width: 100%;
+      height: 91px;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 15px;
+      font-family: PingFang SC;
+      font-weight: 300;
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 1);
     }
   }
 }
