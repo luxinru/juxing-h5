@@ -90,6 +90,9 @@
         查看我们的基准白皮书、文章和更多资源，帮助您作为投资者保持领先地位
       </span>
 
+      <span class="item" @click="toDetail(5)">
+        聚星团队在爱心公益事业的脚步从未停止
+      </span>
       <span class="item" @click="toDetail(1)"> 积极扩大有效投资！ </span>
       <span class="item" @click="toDetail(2)">
         跟着总书记学习二十大报告丨促进人与自然和谐共生

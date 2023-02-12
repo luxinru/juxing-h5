@@ -20,6 +20,7 @@
       <span v-if="type === 1" class="title"> 聚星风采 </span>
       <span v-if="type === 2" class="title"> 历史成果 </span>
       <span v-if="type === 3" class="title"> 避坑指南 </span>
+      <div @click="toDetail(5)">聚星团队在爱心公益事业的脚步从未停止</div>
       <div @click="toDetail(1)">积极扩大有效投资！</div>
       <div @click="toDetail(2)">
         跟着总书记学习二十大报告丨促进人与自然和谐共生
