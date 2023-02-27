@@ -20,7 +20,7 @@
 
         <div class="item">
           <img src="@/assets/images/zuobiao.png" alt="" />
-          <span>上海市</span>
+          <span>广州聚星投资咨询发展有限公司</span>
         </div>
       </div>
 
