@@ -118,6 +118,9 @@
         查看我们的基准白皮书、文章和更多资源，帮助您作为投资者保持领先地位
       </span>
 
+      <span class="item" @click="toDetail(6)">
+        聚星团队关于马士基航运项目投资研讨会
+      </span>
       <span class="item" @click="toDetail(5)">
         聚星团队在爱心公益事业的脚步从未停止
       </span>

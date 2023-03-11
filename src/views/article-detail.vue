@@ -268,6 +268,12 @@
       <span class="title">聚星团队在爱心公益事业的脚步从未停止</span>
       <img src="@/assets/images/gongyi1.png" alt="" />
     </template>
+    <template v-if="type === '6'">
+      <span class="title">聚星团队关于马士基航运项目投资研讨会</span>
+      <video controls>
+        <source src="@/assets/video/video1.m4v" />
+      </video>
+    </template>
   </div>
 </template>
 
@@ -319,6 +325,10 @@ export default {
   img {
     width: 100%;
     margin: 39px 0;
+  }
+
+  video {
+    width: 100%;
   }
 }
 </style>

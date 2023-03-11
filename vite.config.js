@@ -23,4 +23,5 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  assetsInclude: ["**/*.m4v"], // 指定额外的 picomatch 模式 作为静态资源处理
 });
