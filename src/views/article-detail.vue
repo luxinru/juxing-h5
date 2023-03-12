@@ -274,6 +274,39 @@
         <source src="@/assets/video/video1.m4v" />
       </video>
     </template>
+
+    <template v-if="type === '7'">
+      <span class="title">聚星团队白皮书</span>
+      <img src="@/assets/images/pdf1/0001.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0002.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0003.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0004.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0005.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0006.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0007.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0008.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0009.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0010.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0011.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0012.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0013.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0014.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0015.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0016.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0017.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0018.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0019.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0020.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0021.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0022.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0023.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0024.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0025.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0026.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0027.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0028.jpg" alt="" />
+      <img src="@/assets/images/pdf1/0029.jpg" alt="" />
+    </template>
   </div>
 </template>
 
