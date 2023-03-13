@@ -20,7 +20,7 @@
 
         <div class="item">
           <img src="@/assets/images/zuobiao.png" alt="" />
-          <span>广州聚星投资咨询发展有限公司</span>
+          <span>香港聚星投資諮詢有限公司</span>
         </div>
       </div>
 
