@@ -118,6 +118,9 @@
         查看我们的基准白皮书、文章和更多资源，帮助您作为投资者保持领先地位
       </span>
 
+      <span class="item" @click="toDetail(8)">
+        关于聚星团队日常工作内容及其他制度调整的相关通知
+      </span>
       <span class="item" @click="toDetail(7)"> 聚星团队白皮书 </span>
       <span class="item" @click="toDetail(6)">
         聚星团队关于马士基航运项目投资研讨会

@@ -20,6 +20,9 @@
       <span v-if="type === 1" class="title"> 聚星风采 </span>
       <span v-if="type === 2" class="title"> 历史成果 </span>
       <span v-if="type === 3" class="title"> 避坑指南 </span>
+      <div @click="toDetail(8)">
+        关于聚星团队日常工作内容及其他制度调整的相关通知
+      </div>
       <div @click="toDetail(7)">聚星团队白皮书</div>
       <div @click="toDetail(6)">聚星团队关于马士基航运项目投资研讨会</div>
       <div @click="toDetail(5)">聚星团队在爱心公益事业的脚步从未停止</div>

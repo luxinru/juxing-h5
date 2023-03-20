@@ -307,6 +307,15 @@
       <img src="@/assets/images/pdf1/0028.jpg" alt="" />
       <img src="@/assets/images/pdf1/0029.jpg" alt="" />
     </template>
+
+    <template v-if="type === '8'">
+      <span class="title">
+        关于聚星团队日常工作内容及其他制度调整的相关通知
+      </span>
+      <img src="@/assets/images/pdf2/0001.jpg" alt="" />
+      <img src="@/assets/images/pdf2/0002.jpg" alt="" />
+      <img src="@/assets/images/pdf2/0003.jpg" alt="" />
+    </template>
   </div>
 </template>
 
