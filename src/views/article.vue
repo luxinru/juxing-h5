@@ -20,6 +20,7 @@
       <span v-if="type === 1" class="title"> 聚星风采 </span>
       <span v-if="type === 2" class="title"> 历史成果 </span>
       <span v-if="type === 3" class="title"> 避坑指南 </span>
+      <div @click="toDetail(9)">关于聚星团队相关规定决策的通知</div>
       <div @click="toDetail(8)">
         关于聚星团队日常工作内容及其他制度调整的相关通知
       </div>

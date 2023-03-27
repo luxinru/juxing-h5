@@ -115,6 +115,9 @@
         查看我们的基准白皮书、文章和更多资源，帮助您作为投资者保持领先地位
       </span>
 
+      <span class="item" @click="toDetail(9)">
+        关于聚星团队相关规定决策的通知
+      </span>
       <span class="item" @click="toDetail(8)">
         关于聚星团队日常工作内容及其他制度调整的相关通知
       </span>

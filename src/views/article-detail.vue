@@ -316,6 +316,12 @@
       <img src="@/assets/images/pdf2/0002.jpg" alt="" />
       <img src="@/assets/images/pdf2/0003.jpg" alt="" />
     </template>
+
+    <template v-if="type === '9'">
+      <span class="title"> 关于聚星团队相关规定决策的通知 </span>
+      <img src="@/assets/images/pdf3/0001.jpg" alt="" />
+      <img src="@/assets/images/pdf3/0002.jpg" alt="" />
+    </template>
   </div>
 </template>
 
