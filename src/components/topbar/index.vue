@@ -28,6 +28,9 @@
       >
         文章中心
       </span>
+      <span :class="{ active: menu === 'share' }" @click="onItemClick('share')">
+        分享事迹
+      </span>
       <span :class="{ active: menu === 'about' }" @click="onItemClick('about')">
         关于我们
       </span>
