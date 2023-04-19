@@ -22,9 +22,9 @@
           <img v-else :src="item.src" @click="onImgClick(item.src)" />
         </div>
 
-        <span class="name" v-if="item.name">
+        <!-- <span class="name" v-if="item.name">
           {{ item.name }}
-        </span>
+        </span> -->
       </van-swipe-item>
       <template #indicator="{ active, total }">
         <div class="custom-indicator">{{ active + 1 }}/{{ total }}</div>
@@ -136,13 +136,15 @@ export default {
       height: 229px;
       display: flex;
       align-items: center;
+      justify-content: center;
+      background-color: #000;
 
       img {
-        width: 100%;
+        height: 100%;
       }
 
       video {
-        width: 100%;
+        height: 100%;
       }
     }
 
