@@ -22,7 +22,7 @@
           <img v-else :src="item.src" @click="onImgClick(item.src)" />
         </div>
 
-        <span class="name">
+        <span class="name" v-if="item.name">
           {{ item.name }}
         </span>
       </van-swipe-item>
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import img from "@/assets/images/juxingkaobei2.png";
+// import img from "@/assets/images/juxingkaobei2.png";
 import { showImagePreview } from "vant";
 
 export default {
@@ -44,14 +44,34 @@ export default {
     return {
       list: [
         {
-          isVideo: false,
-          name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-          src: img,
+          isVideo: true,
+          name: "",
+          src: "http://juxingtuan.com/resources/videos/video1.m4v",
         },
         {
           isVideo: true,
-          name: "2017年，陈国锋先生集合行业精英成立了聚星团队，团...",
-          src: "http://juxingtuan.com/resources/video1.m4v",
+          name: "",
+          src: "http://juxingtuan.com/resources/videos/video2.mp4",
+        },
+        {
+          isVideo: true,
+          name: "",
+          src: "http://juxingtuan.com/resources/videos/video3.mp4",
+        },
+        {
+          isVideo: true,
+          name: "",
+          src: "http://juxingtuan.com/resources/videos/video4.mp4",
+        },
+        {
+          isVideo: true,
+          name: "",
+          src: "http://juxingtuan.com/resources/videos/video5.mp4",
+        },
+        {
+          isVideo: true,
+          name: "",
+          src: "http://juxingtuan.com/resources/videos/video6.mp4",
         },
       ],
     };
