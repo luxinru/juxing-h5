@@ -115,6 +115,9 @@
         查看我们的基准白皮书、文章和更多资源，帮助您作为投资者保持领先地位
       </span>
 
+      <span class="item" @click="toDetail(10)">
+        聚星团队”招兵买马“火热进行
+      </span>
       <span class="item" @click="toDetail(9)">
         关于聚星团队相关规定决策的通知
       </span>

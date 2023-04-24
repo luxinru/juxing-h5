@@ -322,6 +322,11 @@
       <img src="@/assets/images/pdf3/0001.jpg" alt="" />
       <img src="@/assets/images/pdf3/0002.jpg" alt="" />
     </template>
+
+    <template v-if="type === '10'">
+      <span class="title"> 聚星团队”招兵买马“火热进行 </span>
+      <img src="@/assets/images/photo_2023-04-24_20-08-12.jpg" alt="" />
+    </template>
   </div>
 </template>
 
