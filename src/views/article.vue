@@ -20,6 +20,8 @@
       <span v-if="type === 1" class="title"> 聚星风采 </span>
       <span v-if="type === 2" class="title"> 历史成果 </span>
       <span v-if="type === 3" class="title"> 避坑指南 </span>
+      <div @click="toDetail(12)">中旅国际可行性分析</div>
+      <div @click="toDetail(11)">聚星团队最新管理制度</div>
       <div @click="toDetail(10)">聚星团队”招兵买马“火热进行</div>
       <div @click="toDetail(9)">关于聚星团队相关规定决策的通知</div>
       <div @click="toDetail(8)">

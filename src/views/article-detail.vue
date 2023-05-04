@@ -327,6 +327,32 @@
       <span class="title"> 聚星团队”招兵买马“火热进行 </span>
       <img src="@/assets/images/photo_2023-04-24_20-08-12.jpg" alt="" />
     </template>
+
+    <template v-if="type === '11'">
+      <span class="title"> 聚星团队最新管理制度 </span>
+      <img src="http://juxingtuan.com/resources/pdfs/pdf4/1.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf4/2.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf4/3.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf4/4.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf4/5.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf4/6.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf4/7.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf4/8.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf4/9.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf4/10.png" alt="" />
+    </template>
+
+    <template v-if="type === '12'">
+      <span class="title"> 中旅国际可行性分析 </span>
+      <img src="http://juxingtuan.com/resources/pdfs/pdf5/1.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf5/2.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf5/3.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf5/4.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf5/5.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf5/6.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf5/7.png" alt="" />
+      <img src="http://juxingtuan.com/resources/pdfs/pdf5/8.png" alt="" />
+    </template>
   </div>
 </template>
 
