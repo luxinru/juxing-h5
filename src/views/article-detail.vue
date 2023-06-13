@@ -353,6 +353,13 @@
       <img src="http://juxingtuan.com/resources/pdfs/pdf5/7.png" alt="" />
       <img src="http://juxingtuan.com/resources/pdfs/pdf5/8.png" alt="" />
     </template>
+
+    <template v-if="type === '13'">
+      <span class="title">聚星团队六周年发展历程</span>
+      <video controls>
+        <source src="http://juxingtuan.com/resources/videos/video7.mp4" />
+      </video>
+    </template>
   </div>
 </template>
 
