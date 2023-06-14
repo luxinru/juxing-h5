@@ -144,6 +144,7 @@
         查看我们的基准白皮书、文章和更多资源，帮助您作为投资者保持领先地位
       </span>
 
+      <span class="item" @click="toDetail(15)"> 活动方案 </span>
       <span class="item" @click="toDetail(14)"> 聚星团队-砥砺前行 </span>
       <span class="item" @click="toDetail(13)"> 聚星团队六周年发展历程 </span>
       <span class="item" @click="toDetail(12)"> 中旅国际可行性分析 </span>

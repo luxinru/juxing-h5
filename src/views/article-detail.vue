@@ -367,6 +367,11 @@
         <source src="http://juxingtuan.com/resources/videos/video8.mp4" />
       </video>
     </template>
+
+    <template v-if="type === '15'">
+      <span class="title"> 活动方案 </span>
+      <img src="http://juxingtuan.com/resources/imgs/img2.png" alt="" />
+    </template>
   </div>
 </template>
 

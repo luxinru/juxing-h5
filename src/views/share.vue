@@ -11,11 +11,12 @@
     </section>
 
     <!-- vant轮播图 -->
-    <van-swipe loop :autoplay="3000" class="swipe">
+    <van-swipe loop :autoplay="0" class="swipe">
       <van-swipe-item v-for="(item, index) in list" :key="index">
         <div class="box">
           <video
             v-if="item.isVideo"
+            controls
             :src="item.src"
             @click="onVideoClick($event)"
           ></video>
@@ -108,11 +109,11 @@ export default {
           name: "",
           src: "http://juxingtuan.com/resources/imgs/img1.png",
         },
-        {
-          isVideo: false,
-          name: "",
-          src: "http://juxingtuan.com/resources/imgs/img2.png",
-        },
+        // {
+        //   isVideo: false,
+        //   name: "",
+        //   src: "http://juxingtuan.com/resources/imgs/img2.png",
+        // },
         {
           isVideo: false,
           name: "",
@@ -195,10 +196,11 @@ export default {
       background-color: #000;
 
       img {
-        height: 100%;
+        width: 100%;
       }
 
       video {
+        width: 100%;
         height: 100%;
       }
     }

@@ -21,6 +21,7 @@
       <span v-if="type === 2" class="title"> 历史成果 </span>
       <span v-if="type === 3" class="title"> 避坑指南 </span>
 
+      <div @click="toDetail(15)">活动方案</div>
       <div @click="toDetail(14)">聚星团队-砥砺前行</div>
       <div @click="toDetail(13)">聚星团队六周年发展历程</div>
       <div @click="toDetail(12)">中旅国际可行性分析</div>
