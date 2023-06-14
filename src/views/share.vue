@@ -106,7 +106,7 @@ export default {
         {
           isVideo: false,
           name: "",
-          src: "http://juxingtuan.com/resources/videos/img1.png",
+          src: "http://juxingtuan.com/resources/imgs/img1.png",
         },
       ],
     };
