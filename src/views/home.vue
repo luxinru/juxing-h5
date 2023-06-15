@@ -1,6 +1,27 @@
 <template>
   <div class="page_root">
-    <img class="header" src="@/assets/images/1kaobei.png" alt="" />
+    <!-- <img class="header" src="@/assets/images/1kaobei.png" alt="" /> -->
+    <!-- vant轮播图 -->
+    <van-swipe loop :autoplay="0" class="header">
+      <van-swipe-item>
+        <img src="@/assets/images/1kaobei.png" />
+      </van-swipe-item>
+      <van-swipe-item>
+        <img src="http://juxingtuan.com/resources/imgs/img1.png" />
+      </van-swipe-item>
+      <!-- <van-swipe-item>
+        <img src="http://juxingtuan.com/resources/imgs/img2.png" />
+      </van-swipe-item> -->
+      <van-swipe-item>
+        <img src="http://juxingtuan.com/resources/imgs/img3.png" />
+      </van-swipe-item>
+      <!-- <van-swipe-item>
+        <img src="http://juxingtuan.com/resources/imgs/img4.png" />
+      </van-swipe-item> -->
+      <van-swipe-item>
+        <img src="http://juxingtuan.com/resources/imgs/img5.png" />
+      </van-swipe-item>
+    </van-swipe>
 
     <section class="article">
       <span class="title"> 聚星团队 </span>
@@ -265,6 +286,10 @@ export default {
 .page_root {
   .header {
     width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 
   .article {
