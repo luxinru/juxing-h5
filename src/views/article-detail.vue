@@ -270,7 +270,7 @@
     </template>
     <template v-if="type === '6'">
       <span class="title">聚星团队关于马士基航运项目投资研讨会</span>
-      <video controls>
+      <video controls autoplay>
         <source src="http://juxingtuan.com/resources/videos/video1.m4v" />
       </video>
     </template>
@@ -356,14 +356,14 @@
 
     <template v-if="type === '13'">
       <span class="title">聚星团队六周年发展历程</span>
-      <video controls>
+      <video controls autoplay>
         <source src="http://juxingtuan.com/resources/videos/video7.mp4" />
       </video>
     </template>
 
     <template v-if="type === '14'">
       <span class="title">聚星团队-砥砺前行</span>
-      <video controls>
+      <video controls autoplay>
         <source src="http://juxingtuan.com/resources/videos/video8.mp4" />
       </video>
     </template>

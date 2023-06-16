@@ -17,6 +17,8 @@
           <video
             v-if="item.isVideo"
             controls
+            preload="metadata"
+            :autoplay="false"
             :src="item.src"
             @click="onVideoClick($event)"
           ></video>
@@ -129,6 +131,26 @@ export default {
         //   name: "",
         //   src: "http://juxingtuan.com/resources/imgs/img5.png",
         // },
+        {
+          isVideo: true,
+          name: "",
+          src: "http://juxingtuan.com/resources/videos/video11.mp4",
+        },
+        {
+          isVideo: true,
+          name: "",
+          src: "http://juxingtuan.com/resources/videos/video12.mp4",
+        },
+        {
+          isVideo: true,
+          name: "",
+          src: "http://juxingtuan.com/resources/videos/video13.mp4",
+        },
+        {
+          isVideo: true,
+          name: "",
+          src: "http://juxingtuan.com/resources/videos/video14.mp4",
+        },
       ],
     };
   },
