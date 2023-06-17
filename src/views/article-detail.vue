@@ -370,7 +370,7 @@
 
     <template v-if="type === '15'">
       <span class="title"> 活动方案 </span>
-      <img src="http://juxingtuan.com/resources/imgs/img2.jpg" alt="" />
+      <img src="http://juxingtuan.com/resources/imgs/img2.png" alt="" />
     </template>
   </div>
 </template>

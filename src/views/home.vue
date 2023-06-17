@@ -10,7 +10,7 @@
         <img src="http://juxingtuan.com/resources/imgs/img1.png" />
       </van-swipe-item>
       <!-- <van-swipe-item>
-        <img src="http://juxingtuan.com/resources/imgs/img2.jpg" />
+        <img src="http://juxingtuan.com/resources/imgs/img2.png" />
       </van-swipe-item> -->
       <van-swipe-item>
         <img src="http://juxingtuan.com/resources/imgs/img3.png" />
